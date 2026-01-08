@@ -1,0 +1,28 @@
+# Environment
+.env
+*credentials*.json
+oauth_credentials.json
+token.pickle
+
+# Output
+product_videos/
+demo_output/
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Video files (large)
+*.mp4
+*.avi
+*.mov
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

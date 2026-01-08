@@ -1,0 +1,15 @@
+# Product Video Creator - Requirements
+
+# Core - Required
+Pillow>=10.0.0             # Image processing
+numpy>=1.24.0              # Array operations
+opencv-python>=4.8.0       # Video creation
+
+# Optional - Google Drive upload
+google-auth>=2.22.0
+google-api-python-client>=2.95.0
+pandas>=2.0.0              # Inventory management
+
+# Note: FFmpeg must be installed separately
+# macOS: brew install ffmpeg
+# Ubuntu: sudo apt install ffmpeg
