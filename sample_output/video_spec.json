@@ -1,0 +1,51 @@
+{
+  "input": {
+    "images": [
+      {"name": "full_artwork.jpg", "dimensions": [3200, 2700]},
+      {"name": "detail_top_left.jpg", "dimensions": [1600, 1350]},
+      {"name": "detail_top_right.jpg", "dimensions": [1600, 1350]},
+      {"name": "detail_center.jpg", "dimensions": [1600, 1350]},
+      {"name": "detail_signature.jpg", "dimensions": [800, 400]},
+      {"name": "detail_bottom_left.jpg", "dimensions": [1600, 1350]},
+      {"name": "detail_bottom_right.jpg", "dimensions": [1600, 1350]},
+      {"name": "detail_texture.jpg", "dimensions": [1200, 900]}
+    ]
+  },
+  "video_settings": {
+    "resolution": [1920, 1080],
+    "frame_rate": 30,
+    "duration_seconds": 45,
+    "total_frames": 1350,
+    "format": "MP4",
+    "codec": "H.264",
+    "bitrate": "5 Mbps"
+  },
+  "timeline": [
+    {"segment": "opening", "start": 0, "end": 5, "source": "full_artwork.jpg", "effect": "zoom_in", "zoom": [1.0, 1.3]},
+    {"segment": "detail_1", "start": 5, "end": 9, "source": "detail_top_left.jpg", "effect": "pan", "direction": "left_to_right"},
+    {"segment": "detail_2", "start": 9, "end": 13, "source": "detail_top_right.jpg", "effect": "pan", "direction": "right_to_left"},
+    {"segment": "detail_3", "start": 13, "end": 17, "source": "detail_center.jpg", "effect": "slow_zoom", "zoom": [1.1, 1.4]},
+    {"segment": "quote", "start": 17, "end": 20, "source": "full_artwork.jpg", "effect": "hold", "overlay": "Own a piece of history"},
+    {"segment": "signature", "start": 20, "end": 24, "source": "detail_signature.jpg", "effect": "zoom", "zoom": [1.5, 1.8]},
+    {"segment": "reveal", "start": 24, "end": 29, "source": "full_artwork.jpg", "effect": "zoom_out", "zoom": [1.3, 1.0]},
+    {"segment": "auth_badge", "start": 29, "end": 33, "source": "full_artwork.jpg", "effect": "overlay", "overlay": "Certificate of Authenticity"},
+    {"segment": "detail_4", "start": 33, "end": 37, "source": "detail_bottom_left.jpg", "effect": "pan", "direction": "down"},
+    {"segment": "closing", "start": 37, "end": 45, "source": "full_artwork.jpg", "effect": "fade_out", "overlay": "www.gallery.com"}
+  ],
+  "text_overlays": [
+    {"text": "Own a piece of history", "start": 17, "end": 20, "position": "center", "font_size": 48},
+    {"text": "Artist: Shepard Fairey", "start": 24, "end": 29, "position": "lower_third", "font_size": 36},
+    {"text": "Certificate of Authenticity", "start": 29, "end": 33, "position": "center", "font_size": 42},
+    {"text": "www.gallery.com", "start": 40, "end": 45, "position": "center", "font_size": 36}
+  ],
+  "output": {
+    "filename": "product_video.mp4",
+    "file_size_mb": 28.4,
+    "upload_to_drive": true,
+    "drive_folder_id": "1ABC123..."
+  },
+  "metadata": {
+    "processing_time_seconds": 42.8,
+    "timestamp": "2025-01-10T16:02:44Z"
+  }
+}
