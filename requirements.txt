@@ -13,3 +13,4 @@ pandas>=2.0.0              # Inventory management
 # Note: FFmpeg must be installed separately
 # macOS: brew install ffmpeg
 # Ubuntu: sudo apt install ffmpeg
+rich>=13.0.0
