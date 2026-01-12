@@ -11,7 +11,7 @@
 
 **Create stunning Ken Burns style videos from product photos - perfect for eBay, social media, and galleries.**
 
-![Demo Screenshot](assets/demo.png)
+[![Demo](https://asciinema.org/a/75rbyLWetDBpF9uc.svg)](https://asciinema.org/a/75rbyLWetDBpF9uc)
 
 ---
 
