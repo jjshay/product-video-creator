@@ -56,6 +56,47 @@ python create_product_videos.py examples/ --output output/
 
 ---
 
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph Input
+        A[Product Images] --> B[Image Loader]
+        C[Video Config] --> D[Settings Parser]
+    end
+
+    subgraph Timeline["Timeline Builder"]
+        B --> E[Segment Planner]
+        D --> E
+        E --> F[Opening Segment]
+        E --> G[Detail Segments]
+        E --> H[Quote Overlay]
+        E --> I[Closing Segment]
+    end
+
+    subgraph Effects["Ken Burns Engine"]
+        F & G & H & I --> J[Pan Calculator]
+        J --> K[Zoom Calculator]
+        K --> L[Easing Functions]
+        L --> M[Frame Generator]
+    end
+
+    subgraph Composition["Video Composition"]
+        M --> N[Text Overlay Engine]
+        N --> O[Transition Mixer]
+        O --> P[FFmpeg Encoder]
+    end
+
+    subgraph Output
+        P --> Q[HD Video 1920x1080]
+        P --> R[Google Drive Upload]
+    end
+
+    style A fill:#e1f5fe
+    style Q fill:#c8e6c9
+    style R fill:#c8e6c9
+```
+
 ## Ken Burns Effect
 
 The Ken Burns effect creates motion from still images:
