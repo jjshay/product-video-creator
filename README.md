@@ -1,11 +1,14 @@
 # Product Video Creator
 
+![CI](https://github.com/jjshay/product-video-creator/workflows/CI/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-required-orange.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-enabled-brightgreen.svg)
 
 **Create stunning Ken Burns style videos from product photos - perfect for eBay, social media, and galleries.**
+
+![Demo](demo.gif)
 
 ---
 

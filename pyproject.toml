@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "product-video-creator"
+version = "1.0.0"
+description = "Create stunning Ken Burns style videos from product photos - perfect for eBay, social media, and galleries"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "John (JJ) Shay", email = "jjshay@example.com"}
+]
+keywords = ["video", "ken-burns", "ffmpeg", "opencv", "ecommerce", "product-video"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Video",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python>=4.8.0",
+    "Pillow>=10.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "flake8>=6.1.0",
+    "isort>=5.12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jjshay/product-video-creator"
+Repository = "https://github.com/jjshay/product-video-creator"
+Issues = "https://github.com/jjshay/product-video-creator/issues"
+
+[project.scripts]
+product-video = "create_product_videos:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --cov=. --cov-report=term-missing"
