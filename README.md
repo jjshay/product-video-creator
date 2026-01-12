@@ -1,6 +1,9 @@
 # Product Video Creator
 
 ![CI](https://github.com/jjshay/product-video-creator/workflows/CI/badge.svg)
+![CodeQL](https://github.com/jjshay/product-video-creator/workflows/CodeQL/badge.svg)
+[![codecov](https://codecov.io/gh/jjshay/product-video-creator/branch/main/graph/badge.svg)](https://codecov.io/gh/jjshay/product-video-creator)
+![Release](https://img.shields.io/github/v/release/jjshay/product-video-creator)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-required-orange.svg)
