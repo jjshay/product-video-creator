@@ -1,0 +1,42 @@
+{
+  "product": {
+    "name": "Shepard Fairey - Hope Print",
+    "sku": "SF-HOPE-001"
+  },
+  "input_images": [
+    {"file": "examples/artwork_full.jpg", "type": "main"},
+    {"file": "examples/artwork_top_left.jpg", "type": "detail"},
+    {"file": "examples/artwork_top_right.jpg", "type": "detail"},
+    {"file": "examples/artwork_center.jpg", "type": "detail"},
+    {"file": "examples/artwork_signature.jpg", "type": "signature"},
+    {"file": "examples/artwork_texture.jpg", "type": "texture"}
+  ],
+  "video_settings": {
+    "resolution": [1920, 1080],
+    "fps": 30,
+    "duration_seconds": 45,
+    "output_format": "mp4",
+    "quality": "high"
+  },
+  "branding": {
+    "quotes": [
+      "Own a piece of history",
+      "Museum-quality artwork",
+      "Certified authentic"
+    ],
+    "logo_file": null,
+    "website_url": "www.gallery.com",
+    "color_scheme": "auto"
+  },
+  "ken_burns_settings": {
+    "zoom_range": [1.0, 1.4],
+    "pan_speed": "slow",
+    "easing": "ease-in-out",
+    "transition_duration": 0.5
+  },
+  "output": {
+    "filename": "product_video_SF-HOPE-001.mp4",
+    "upload_to_drive": true,
+    "drive_folder_id": null
+  }
+}

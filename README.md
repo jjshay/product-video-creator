@@ -1,5 +1,10 @@
 # Product Video Creator
 
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-required-orange.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-enabled-brightgreen.svg)
+
 **Create stunning Ken Burns style videos from product photos - perfect for eBay, social media, and galleries.**
 
 ---
@@ -19,18 +24,32 @@ Turn static product images into professional videos:
 
 ---
 
-## Quick Demo
+## Quick Start
 
 ```bash
+# Clone the repo
+git clone https://github.com/jjshay/product-video-creator.git
+cd product-video-creator
+
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the demo
+# Run the interactive demo
 python demo.py
 
-# Watch your video
-open demo_output/product_video.mp4
+# Or run the visual showcase
+python showcase.py
+
+# Create video from sample artwork crops
+python create_product_videos.py examples/ --output output/
 ```
+
+### Sample Files
+- `examples/artwork_full.jpg` - Full artwork image
+- `examples/artwork_top_left.jpg` - Detail crop (top left corner)
+- `examples/artwork_signature.jpg` - Signature detail crop
+- `examples/video_config.json` - Video configuration
+- `sample_output/video_spec.json` - Example video specification
 
 ---
 
