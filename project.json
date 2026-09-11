@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "name": "product-video-creator",
+  "title": "Product Photo Video Creator",
+  "category": "Creative tooling",
+  "summary": "Still product images need a lightweight way to become motion content.",
+  "status": "Source available; runtime not revalidated in this documentation review",
+  "visibility": "public",
+  "reviewed_on": "2026-09-11",
+  "reviewed_commit": "2df932b96112643fc5f21cff29d298093985f423",
+  "architecture": "Product images \u2192 segment plan \u2192 pan and zoom \u2192 transitions and overlays \u2192 video export.",
+  "evidence": [
+    {
+      "path": "create_product_videos.py",
+      "role": "Implementation component supporting the data flow described above."
+    },
+    {
+      "path": "video_generator.py",
+      "role": "Implementation component supporting the data flow described above."
+    },
+    {
+      "path": "tests/test_video.py",
+      "role": "Behavioral test source; inspect fixtures and assertions before interpreting coverage."
+    }
+  ],
+  "validation": "Repository tree and referenced source reviewed. Existing application tests, hosted deployments, paid providers, and external mutations were not re-run in this documentation review.",
+  "limitations": "A deterministic photo-to-video pipeline is economical but needs careful framing and duration checks.",
+  "next_improvement": "Render a known fixture and verify duration, resolution, crop safety, and overlay readability.",
+  "related_repositories": [
+    "ArtPrint",
+    "airdrop-processor",
+    "art-crop-system",
+    "art-video-project",
+    "handwriting-analysis"
+  ]
+}

@@ -1,9 +1,12 @@
 # Product Video Creator
 
+<!-- portfolio-navigation:start -->
+[Project brief](docs/PROJECT_BRIEF.md) · [Structured project record](project.json) · [Portfolio](https://github.com/jjshay)
+
+<!-- portfolio-navigation:end -->
+
 ![CI](https://github.com/jjshay/product-video-creator/workflows/CI/badge.svg)
 ![CodeQL](https://github.com/jjshay/product-video-creator/workflows/CodeQL/badge.svg)
-[![codecov](https://codecov.io/gh/jjshay/product-video-creator/branch/main/graph/badge.svg)](https://codecov.io/gh/jjshay/product-video-creator)
-![Release](https://img.shields.io/github/v/release/jjshay/product-video-creator)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-required-orange.svg)
@@ -11,9 +14,7 @@
 
 **Create stunning Ken Burns style videos from product photos - perfect for eBay, social media, and galleries.**
 
-[![Demo](https://asciinema.org/a/evNsmAV3e4euoZ5k.svg)](https://asciinema.org/a/evNsmAV3e4euoZ5k)
 
-[![Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo-Click%20to%20Play-red?style=for-the-badge&logo=asciinema)](https://asciinema.org/a/evNsmAV3e4euoZ5k)
 
 ---
 
